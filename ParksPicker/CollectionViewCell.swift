@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  CollectionViewCell.swift
 //  ParksPicker
 /*
  * Copyright (c) 2016 Razeware LLC
@@ -23,20 +23,8 @@
  * THE SOFTWARE.
  */
 
-
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  
-  var window: UIWindow?
-  
-  
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    return true
-  }
-  
-  
+class CollectionViewCell: UICollectionViewCell {
+  @IBOutlet weak var textLabel: UILabel!
 }
-

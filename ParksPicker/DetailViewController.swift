@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  DetailViewController.swift
 //  ParksPicker
 /*
  * Copyright (c) 2016 Razeware LLC
@@ -23,20 +23,26 @@
  * THE SOFTWARE.
  */
 
-
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class DetailViewController: UIViewController {
+  @IBOutlet fileprivate weak var imageView: UIImageView!
+  @IBOutlet fileprivate weak var nameLabel: UILabel!
+  @IBOutlet fileprivate weak var stateLabel: UILabel!
+  @IBOutlet fileprivate weak var dateLabel: UILabel!
   
-  var window: UIWindow?
+  var park: Park?
   
-  
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    return true
-  }
-  
-  
-}
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    if let nationalPark = park {
+      navigationItem.title = nationalPark.name
+      imageView.image = UIImage(named: nationalPark.photo)
+      nameLabel.text = nationalPark.name
+      stateLabel.text = nationalPark.state
+      dateLabel.text = nationalPark.date
+    }
 
+  }
+}

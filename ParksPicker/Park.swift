@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  Park.swift
 //  ParksPicker
 /*
  * Copyright (c) 2016 Razeware LLC
@@ -26,17 +26,24 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class Park {
   
-  var window: UIWindow?
+  var name: String
+  var state: String
+  var date: String
+  var photo: String
+  var index: Int
   
-  
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    return true
+  init(name: String, state: String, date: String, photo: String, index: Int) {
+    self.name = name
+    self.state = state
+    self.date = date
+    self.photo = photo
+    self.index = index
   }
   
+  convenience init(copying park: Park) {
+    self.init(name: park.name, state: park.state, date: park.date, photo: park.photo, index: park.index)
+  }
   
 }
-

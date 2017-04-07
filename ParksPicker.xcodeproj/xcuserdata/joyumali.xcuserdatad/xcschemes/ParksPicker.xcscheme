@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E06B6AA21E97208700E12419"
+               BlueprintIdentifier = "F5CD472C1D949A70007A3267"
                BuildableName = "ParksPicker.app"
                BlueprintName = "ParksPicker"
                ReferencedContainer = "container:ParksPicker.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E06B6AA21E97208700E12419"
+            BlueprintIdentifier = "F5CD472C1D949A70007A3267"
             BuildableName = "ParksPicker.app"
             BlueprintName = "ParksPicker"
             ReferencedContainer = "container:ParksPicker.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E06B6AA21E97208700E12419"
+            BlueprintIdentifier = "F5CD472C1D949A70007A3267"
             BuildableName = "ParksPicker.app"
             BlueprintName = "ParksPicker"
             ReferencedContainer = "container:ParksPicker.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E06B6AA21E97208700E12419"
+            BlueprintIdentifier = "F5CD472C1D949A70007A3267"
             BuildableName = "ParksPicker.app"
             BlueprintName = "ParksPicker"
             ReferencedContainer = "container:ParksPicker.xcodeproj">
